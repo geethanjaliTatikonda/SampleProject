@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/actionSearch"
+        android:icon="@drawable/ic_search_black_24dp"
+        app:showAsAction="always"
+        android:title="Search"
+        app:actionViewClass="android.support.v7.widget.SearchView" />
+    <item
+        android:id="@+id/actionFilter"
+        android:icon="@drawable/ic_filter_active_white_icon"
+        android:orderInCategory="99"
+        android:title="Filter"
+        android:visible="true"
+        app:showAsAction="always" >
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/showAll"
+                    android:title="ShowAll"
+                    android:visible="true"
+                    app:showAsAction="always"
+                    />
+                <item
+                    android:id="@+id/activitiesOnly"
+                    android:title="Open Active"
+                    android:visible="true"
+                    app:showAsAction="always" />
+            </group>
+        </menu>
+
+
+    </item>
+
+</menu>
